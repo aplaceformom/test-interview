@@ -1,0 +1,26 @@
+{
+  "name": "availability-board",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Community availability board — SSR React + mocked API",
+  "scripts": {
+    "dev": "concurrently -n api,web -c magenta,cyan \"npm:api\" \"npm:web\"",
+    "api": "node api/server.js",
+    "web": "tsx watch src/server/index.tsx"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "concurrently": "^8.2.2",
+    "json-server": "0.17.4",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
